@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+    <style>
+    body{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        background-color: cornsilk;
+    }
+    h2{
+        text-align: center;
+        }
+        form{
+            height: 500px;
+            padding: 15px;
+            margin-left: 300px;
+            margin-right: 300px;
+            border-radius: 5px;
+            background-color: darkcyan;
+        }
+        label{
+            display: block;
+            margin: 1px;
+            font-weight: bold;
+        }
+        select{
+            width: 70%;
+            padding: 4px;
+            border: 1px;
+            border-radius: 3px;
+            margin-top: 10px;
+        }
+        .main{
+            width: 400px;
+            margin: auto;
+            height: auto;
+        }
+        input[type="submit"]{
+            color: blue;
+            background-color:aliceblue;
+            cursor: grab;
+            margin-top: 7px;
+            margin-left: 10px;
+        }
+        input[type="submit"]:hover{
+            background-color: blue;
+        }
+       
+        input[type="text"]{
+            width: 70%;
+        }
+        input[type="password"]{
+            width: 70%;
+        }
+        input[type="tel"]{
+            width: 70%;
+        }
+        input[type=""]{
+            width: 70%;
+        }
+        textarea{
+            width: 70%;
+            height: 130px;
+        }
+    </style>
+    <h2>Registration Form</h2>
+    <form action="">
+        <div>
+            <label for="name">NAME</label>
+            <input type="name" name="name" id="name"required>
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" required>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required>
+            <label for="phonenumber">Phone number</label>
+            <input type="tel" name="phonenumber" id="phonenumber">
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="transgender">Transgender</option>
+            </select>
+            <label for="language">Language</label>
+            <input type="text" name="language" id="language">
+            <label for="zipcode">Zip code</label>
+            <input type="text" name="zipcode" id="zipcode">
+            <label for="about">About</label>
+            <textarea name="about" id="about">About.....</textarea>
+            <div class="sub">
+                <input type="submit" value="submit">
+            </div>
+        </div>
+    </form>
+</body>
+</html>             
